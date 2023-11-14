@@ -12,7 +12,7 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Fprintln(os.Stderr, "Usage: qp [-d|-e < infile > outfile]")
+		fmt.Fprintln(os.Stderr, "Usage: qp [-d | -e < infile > outfile]")
 		os.Exit(1)
 	}
 
@@ -43,7 +43,7 @@ func main() {
 			encoded.Close()
 		}
 	default:
-		fmt.Fprintln(os.Stderr, "Usage: qp [-d|-e < infile > outfile]")
+		fmt.Fprintln(os.Stderr, "Usage: qp [-d | -e < infile > outfile]")
 		os.Exit(1)
 	}
 }
